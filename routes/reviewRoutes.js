@@ -13,7 +13,7 @@ router.post("/products/:productid/review", async(req,res)=>{
     //find the product in which you want to add review
 
     const product = await Product.findById(productid);
-    // req.flash("review","Your Reviewed the product !!");
+    req.flash("review","Your Reviewed the product !!");
 
      // Adding the review in the database
 

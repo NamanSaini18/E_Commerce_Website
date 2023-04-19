@@ -29,7 +29,7 @@ router.post("/register",async(req,res)=>{
 
     const newUser = await User.register(user, password);
 
-    req.flash("Success","You have been registered successfully")
+    req.flash("success","You have been registered successfully")
 
     res.redirect("/login");
 
